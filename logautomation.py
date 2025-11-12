@@ -6,7 +6,7 @@ from datetime import datetime
 
 # ===== Timestamped output file =====
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-SUMMARY_FILE = f"/home/hexis/python/log_summary_{timestamp}.txt"
+SUMMARY_FILE = f"/home/hexis/python/log_summary_{timestamp}.txt" # replace the path 
 
 # ===== Regex patterns for detecting log events =====
 ERROR_PATTERN = re.compile(r"\berror\b", re.IGNORECASE)
