@@ -41,9 +41,7 @@ Before running the project, ensure you have:
 
 ---
 
-=========================================
-HOW TO SET UP LOG ANALYZER SCRIPT IN CRON
-=========================================
+### How to set up this script in cron
 
 1. Make sure your Python script is executable:
    chmod +x /home/hexis/python/log_analyzer.py
@@ -73,7 +71,7 @@ HOW TO SET UP LOG ANALYZER SCRIPT IN CRON
    crontab -l
 
    You should see:
-   */5 * * * * /usr/bin/python3 /home/hexis/python/log_analyzer.py >> /home/hexis/Scripts/sysmon_cron.log 2>&1 (replace with your     own file path)
+   */5 * * * * /usr/bin/python3 /home/hexis/python/log_analyzer.py >> /home/hexis/Scripts/sysmon_cron.log 2>&1
 
 7. Optional: check cron logs to make sure it runs:
    grep CRON /var/log/syslog  (on Ubuntu/Debian)
@@ -85,7 +83,4 @@ HOW TO SET UP LOG ANALYZER SCRIPT IN CRON
 
    You should see new timestamped reports being created automatically.
 
-=========================================
-CRON SETUP COMPLETE
-=========================================
 
